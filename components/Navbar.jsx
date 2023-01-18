@@ -2,8 +2,11 @@
 
 // component renders on client side (used when component includes use client hooks - useState/useEffect)
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import styles from '../styles'
 import { navVariants } from '../utils/motion'
+import search from '../public/search.svg'
+import menu from '../public/menu.svg'
 
 const Navbar = () => (
   <motion.nav
@@ -13,17 +16,17 @@ const Navbar = () => (
     className={`${styles.xPaddings} py-8 relative`}
   >
     <div className="absolute w-[50%] inset-0 gradient-01" />
-    <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
-      <img
-        src="/search.svg"
+    <div className={`${styles.innerWidth} mx-auto between-flex gap-8`}>
+      <Image
+        src={search}
         alt="search"
         className="w-[24px] h-[24px] object-contain"
       />
       <h2 className="font-extrabold font-24px leading-[30px] text-white">
         METAVERSUS
       </h2>
-      <img
-        src="./menu.svg"
+      <Image
+        src={menu}
         alt="menu"
         className="w-[24px] h-[24px] object-contain"
       />

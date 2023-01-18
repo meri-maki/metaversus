@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Eudoxus Sans", sans-serif;
+  font-family: 'Eudoxus Sans', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -103,4 +103,32 @@
 
   background: #65c4fa;
   filter: blur(150px);
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-flex {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.end-flex {
+  display: flex;
+  justify-content: end;
+}
+
+.between-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+p {
+  
 }
